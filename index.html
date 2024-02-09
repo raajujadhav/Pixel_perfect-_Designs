@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Boxes with Accordion</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-box">
+          <div class="header-text">shopping</div>
+        </div>
+      </div>
+      <ul class="accordion">
+        <li>
+          <input type="radio" name="accordion" id="first" checked />
+          <label for="first">Pair 1 </label>
+
+          <div class="content">
+            <div class="box" id="box1">
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  onclick="toggleCheckbox('box1'); changeColor('box1', 'red');"
+                />
+              </div>
+              <div class="dropdown-container">
+                <select
+                  class="dropdown"
+                  onchange="changeDropdown(this.value, 'box1')"
+                >
+                  <option value="">Select Size</option>
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                </select>
+                <select
+                  class="dropdown"
+                  onchange="changeDropdown(this.value, 'box1')"
+                >
+                  <option value="">Select Color</option>
+                  <option value="red">Red</option>
+                  <option value="green">Green</option>
+                  <option value="blue">Blue</option>
+                </select>
+                <select
+                  class="dropdown"
+                  onchange="changeDropdown(this.value, 'box1')"
+                >
+                  <option value="">Select Style</option>
+                  <option value="solid">Solid</option>
+                  <option value="dotted">Dotted</option>
+                  <option value="dashed">Dashed</option>
+                </select>
+              </div>
+              <div class="price" id="price1">price $150</div>
+            </div>
+            <div class="discount">50% OFF</div>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="second" />
+          <label for="second">Pair 2</label>
+          <div class="content">
+            <div class="box" id="box2">
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  onclick="toggleCheckbox('box2'); changeColor('box2', 'red');"
+                />
+              </div>
+              <div class="dropdown-container">
+                <select
+                  class="dropdown"
+                  onchange="changeDropdown(this.value, 'box2')"
+                >
+                  <option value="">Select Size</option>
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                </select>
+                <select
+                  class="dropdown"
+                  onchange="changeDropdown(this.value, 'box2')"
+                >
+                  <option value="">Select Color</option>
+                  <option value="red">Red</option>
+                  <option value="green">Green</option>
+                  <option value="blue">Blue</option>
+                </select>
+                <select
+                  class="dropdown"
+                  onchange="changeDropdown(this.value, 'box2')"
+                >
+                  <option value="">Select Style</option>
+                  <option value="solid">Solid</option>
+                  <option value="dotted">Dotted</option>
+                  <option value="dashed">Dashed</option>
+                </select>
+              </div>
+              <div class="price" id="price2">price $230</div>
+            </div>
+
+            <div class="discount">10% OFF</div>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="third" />
+          <label for="third">Pair 3</label>
+          <div class="content">
+            <div class="box" id="box3">
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  onclick="toggleCheckbox('box3'); changeColor('box3', 'red');"
+                />
+              </div>
+              <div class="dropdown-container">
+                <select
+                  class="dropdown"
+                  onchange="changeDropdown(this.value, 'box3')"
+                >
+                  <option value="">Select Size</option>
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                </select>
+                <select
+                  class="dropdown"
+                  onchange="changeDropdown(this.value, 'box3')"
+                >
+                  <option value="">Select Color</option>
+                  <option value="red">Red</option>
+                  <option value="green">Green</option>
+                  <option value="blue">Blue</option>
+                </select>
+                <select
+                  class="dropdown"
+                  onchange="changeDropdown(this.value, 'box3')"
+                >
+                  <option value="">Select Style</option>
+                  <option value="solid">Solid</option>
+                  <option value="dotted">Dotted</option>
+                  <option value="dashed">Dashed</option>
+                </select>
+              </div>
+              <div class="price" id="price3">price $190</div>
+            </div>
+            <div class="discount">30% OFF</div>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="fourth" />
+          <label for="fourth">Pair 4</label>
+          <div class="content">
+            <div class="box" id="box4">
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  onclick="toggleCheckbox('box4'); changeColor('box4', 'red');"
+                />
+              </div>
+              <div class="dropdown-container">
+                <select
+                  class="dropdown"
+                  onchange="changeDropdown(this.value, 'box4')"
+                >
+                  <option value="">Select Size</option>
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                </select>
+                <select
+                  class="dropdown"
+                  onchange="changeDropdown(this.value, 'box4')"
+                >
+                  <option value="">Select Color</option>
+                  <option value="red">Red</option>
+                  <option value="green">Green</option>
+                  <option value="blue">Blue</option>
+                </select>
+                <select
+                  class="dropdown"
+                  onchange="changeDropdown(this.value, 'box4')"
+                >
+                  <option value="">Select Style</option>
+                  <option value="solid">Solid</option>
+                  <option value="dotted">Dotted</option>
+                  <option value="dashed">Dashed</option>
+                </select>
+              </div>
+              <div class="price" id="price4">price $120</div>
+            </div>
+            <div class="discount">60% OFF</div>
+          </div>
+        </li>
+      </ul>
+      <div style="color: #145105; margin-left: 20px">Free 2 days shopping</div>
+      <div class="discount" style="margin-left: 400px">Total amount:$350</div>
+      <button class="cartbutton">+ Add Cart</button>
+      <div style="margin-left: 350px; font-size: 12px">@Powered by raju</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
